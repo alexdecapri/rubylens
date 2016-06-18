@@ -9,7 +9,7 @@
 	* Controller of the app
 	*/
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.controller('SidenavCtrl', SidenavCtrl)
 		.controller('SettingsCtrl', SettingsCtrl);
 

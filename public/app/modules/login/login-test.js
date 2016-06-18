@@ -13,7 +13,7 @@
 		var controller = null, $scope = null;
 
 		beforeEach(function () {
-			module('builtright');
+			module('rubylens');
 		});
 
 		beforeEach(inject(function ($controller, $rootScope) {

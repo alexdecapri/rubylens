@@ -1,6 +1,6 @@
 {
   "generator-angm": {
-    "appName": "builtright",
+    "appName": "rubylens",
     "angularCookies": true,
     "angularAnimate": true,
     "angularSanitize": true,

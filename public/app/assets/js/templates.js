@@ -1,4 +1,4 @@
-angular.module('builtright').run(['$templateCache', function($templateCache) {
+angular.module('rubylens').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('app/modules/home/dashboard.html',
@@ -40,7 +40,7 @@ angular.module('builtright').run(['$templateCache', function($templateCache) {
     "            <div layout=\"column\" class=\"md-toolbar-tools-bottom inset\">\n" +
     "                <div layout=\"row\">\n" +
     "                    <div flex=\"80\" style=\"margin-top: 10px;\">\n" +
-    "                        <div>builtright</div>\n" +
+    "                        <div>rubylens</div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
@@ -76,7 +76,7 @@ angular.module('builtright').run(['$templateCache', function($templateCache) {
     "            <md-button ng-click=\"layout.toggleSidenav('left')\" hide-gt-md aria-label=\"Menu\">\n" +
     "                <ng-md-icon icon=\"menu\"></ng-md-icon>\n" +
     "            </md-button>\n" +
-    "            <h3>builtright</h3>\n" +
+    "            <h3>rubylens</h3>\n" +
     "            <span flex></span>\n" +
     "            <md-button aria-label=\"Search\" ng-click=\"showSearch = !showSearch\">\n" +
     "                <ng-md-icon icon=\"search\"></ng-md-icon>\n" +
@@ -137,7 +137,7 @@ angular.module('builtright').run(['$templateCache', function($templateCache) {
     "                <ng-md-icon icon=\"menu\"></ng-md-icon>\n" +
     "            </md-button>\n" +
     "            <h3>\n" +
-    "                <a href=\"/\">builtright</a>\n" +
+    "                <a href=\"/\">rubylens</a>\n" +
     "            </h3>\n" +
     "            <span flex></span>\n" +
     "            <md-button aria-label=\"Search\" ng-click=\"showSearch = !showSearch\">\n" +

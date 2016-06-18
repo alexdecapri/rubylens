@@ -10,7 +10,7 @@
    */
 
   angular
-    .module('builtright')
+    .module('rubylens')
     .factory('MenuService', Menu);
   // Inject your dependencies as .$inject = ['$http', 'someSevide'];
   // function Name ($http, someSevide) {...}
@@ -20,11 +20,6 @@
   function Menu($http) {
 
     var menu = [
-
-      {
-        link: 'builds',
-        name: 'Builds'
-      },
 
       {
         link: 'login',

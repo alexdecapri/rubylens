@@ -9,7 +9,7 @@ var session = require('express-session');
 var mongoose = require('mongoose');
 var cookieParser = require('cookie-parser');
 var bson = require('bson');
-var path = require('path'); 
+var path = require('path');
 var app = express();
 var router = express.Router();
 
@@ -27,19 +27,19 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-//Controllers 
+//Controllers
 var UserCtrl = require('./controllers/UserCtrl');
 
-//Routes 
+//Routes
 app.use('/users', require('./routes/UserRoutes'));
-app.use('/builds', require('./routes/BuildRoutes')); 
-app.use('/parts', require('./routes/PartRoutes')); 
+app.use('/builds', require('./routes/BuildRoutes'));
+app.use('/parts', require('./routes/PartRoutes'));
 
 //Models
 var User = require('./models/User');
 
 //Database
-var mongoUri = "mongodb://localhost:27017/builtright";
+var mongoUri = "mongodb://localhost:27017/rubylens";
 mongoose.connect(mongoUri);
 mongoose.connection.once('open', function() {
   console.log("Connected to db at " + mongoUri);
@@ -85,7 +85,7 @@ passport.deserializeUser(function(id, done) {
   });
 });
 
-/* Endpoints 
+/* Endpoints
  **********************************************************************/
 //Auth
 app.get('/user', UserCtrl.getUser);
@@ -96,8 +96,8 @@ app.post('/users/auth', passport.authenticate('local'), function(req, res) {
 });
 
 app.get('/logout', function(req, res){
-  req.logout(); 
-  res.status(200).redirect('/'); 
+  req.logout();
+  res.status(200).redirect('/');
 })
 
 //Port

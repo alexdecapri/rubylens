@@ -1,5 +1,5 @@
 /*!
-* builtright - v0.0.1 - MIT LICENSE 2016-05-04. 
+* rubylens - v0.0.1 - MIT LICENSE 2016-05-04. 
 * @author Hivemind Apps
 */
 (function() {
@@ -14,7 +14,7 @@
    * Main module of the application.
    */
 
-  angular.module('builtright', [
+  angular.module('rubylens', [
     'ngResource',
     'ngAria',
     'ui.bootstrap',
@@ -44,7 +44,7 @@
 
 
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.config(configure)
 		.run(runBlock);
 
@@ -98,7 +98,7 @@
 	* Route of the app
 	*/
 
-angular.module('builtright')
+angular.module('rubylens')
 	.config(['$stateProvider', function ($stateProvider) {
 		$stateProvider
 			
@@ -128,7 +128,7 @@ angular.module('builtright')
 	*/
 
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.controller('HomeCtrl', Home);
 
 	Home.$inject = ['homeService'];
@@ -142,7 +142,7 @@ angular.module('builtright')
 	function Home(homeService) {
 		/*jshint validthis: true */
 		var vm = this;
-		vm.title = "Hello, builtright!";
+		vm.title = "Hello, rubylens!";
 		vm.version = "1.0.0";
 		vm.listFeatures = homeService.getFeaturesList();
 
@@ -162,7 +162,7 @@ angular.module('builtright')
 	*/
 
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.controller('LayoutCtrl', Layout);
 
 	Layout.$inject = ['$mdSidenav', '$cookies', '$state', '$mdToast', '$mdDialog'];
@@ -262,7 +262,7 @@ angular.module('builtright')
 	* Controller of the app
 	*/
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.controller('SidenavCtrl', SidenavCtrl)
 		.controller('SettingsCtrl', SettingsCtrl);
 
@@ -360,7 +360,7 @@ angular.module('builtright')
 	* Service of the app
 	*/
 
-	angular.module('builtright')
+	angular.module('rubylens')
 		.factory('homeService', homeService);
 
 	homeService.$inject = ['$http'];
@@ -404,7 +404,7 @@ angular.module('builtright')
 	*/
 
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.factory('MenuService', Menu);
 
 	// Inject your dependencies as .$inject = ['$http', '$otherDependency'];

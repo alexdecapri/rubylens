@@ -8,10 +8,10 @@
 	* Route of the app
 	*/
 
-angular.module('builtright')
+angular.module('rubylens')
 	.config(['$stateProvider', function ($stateProvider) {
 		$stateProvider
-			
+
 			.state('home', {
 				url: '',
 				abstract: true,
@@ -23,5 +23,5 @@ angular.module('builtright')
 				url:'/dashboard',
 				templateUrl: 'app/modules/home/dashboard.html'
 			});
-			
+
 	}]);

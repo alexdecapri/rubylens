@@ -10,7 +10,7 @@
 	*/
 
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.controller('HomeCtrl', Home);
 
 	Home.$inject = ['homeService'];
@@ -24,7 +24,7 @@
 	function Home(homeService) {
 		/*jshint validthis: true */
 		var vm = this;
-		vm.title = "Hello, BuiltRight!";
+		vm.title = "Hello, rubylens!";
 		vm.version = "1.0.0";
 		vm.listFeatures = homeService.getFeaturesList();
 

@@ -9,7 +9,7 @@
 	* Service of the app
 	*/
 
-	angular.module('builtright')
+	angular.module('rubylens')
 		.factory('homeService', homeService);
 
 	homeService.$inject = ['$http'];

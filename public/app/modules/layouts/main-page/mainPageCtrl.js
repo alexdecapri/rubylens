@@ -10,7 +10,7 @@
 	*/
 
 	angular
-		.module('builtright')
+		.module('rubylens')
 		.controller('LayoutCtrl', Layout);
 
 	Layout.$inject = ['$mdSidenav', '$cookies', '$state', '$mdToast', '$mdDialog'];

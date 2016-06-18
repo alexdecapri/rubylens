@@ -11,7 +11,7 @@
 
 
   angular
-    .module('builtright')
+    .module('rubylens')
     .config(configure)
     .run(runBlock);
 

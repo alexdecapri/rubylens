@@ -10,7 +10,7 @@
    * Main modules of the application.
    */
 
-  angular.module('builtright', [
+  angular.module('rubylens', [
     'ngResource',
     'ngAria',
     'ui.bootstrap',
@@ -22,11 +22,10 @@
     'ngSanitize',
     'ui.router',
     'home',
-    'builds',
     'login',
     'firebase'
   ])
-  .constant('firebaseUrl', 'https://builtright.firebaseio.com/')
+  .constant('firebaseUrl', 'https://rubylens.firebaseio.com/')
   .config(function($locationProvider){
     $locationProvider.html5Mode(true);
   });

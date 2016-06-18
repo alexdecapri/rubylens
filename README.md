@@ -1,5 +1,4 @@
-# BUILTRIGHT
-A build tracker for the auto enthusiast. 
+# RubyLens
 
 ### Style guide 
 
