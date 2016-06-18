@@ -14,7 +14,13 @@
                 <div class="inset">
                     <ng-md-icon icon="apps"></ng-md-icon>
                 </div>
-                <p> Dashboard </p>
+                <p> Browse </p>
+            </md-list-item>
+            <md-list-item>
+                <div class="inset">
+                    <ng-md-icon icon="clear_all"></ng-md-icon>
+                </div>
+                <p> Filter </p>
             </md-list-item>
             <md-list-item ng-repeat="item in vm.menu" ng-click="vm.navigateTo('home.' + item.link)">
                 <div class="inset" ng-show="item.icon">
