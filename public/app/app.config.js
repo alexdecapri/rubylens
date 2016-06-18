@@ -12,7 +12,9 @@
 
   angular
     .module('rubylens')
+
     .config(configure)
+    .config(colors)
     .run(runBlock);
 
   configure.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider'];
@@ -28,6 +30,14 @@
     $urlRouterProvider
       .otherwise('/dashboard');
 
+  }
+
+  colors.$inject = ['$mdThemingProvider']
+
+  function colors($mdThemingProvider){
+    $mdThemingProvider.theme('default')
+      .primaryPalette('red')
+      .accentPalette('grey');
   }
 
   runBlock.$inject = ['$rootScope'];
